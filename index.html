@@ -3,134 +3,197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Yixuan He — Undergraduate researcher at Hubei University & Manchester Metropolitan University. VLM/VLA, machine learning, deep learning, and medical-engineering intersection." />
+  <meta name="description" content="Yixuan He — Undergraduate researcher at Hubei University & Manchester Metropolitan University. Interests in VLM/VLA, machine learning, deep learning, and medical-engineering intersection." />
   <title>Yixuan He · Academic Portfolio</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Y</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/avatar.jpg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="page">
+  <!-- Top nav (Apple-style frosted bar) -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">Yixuan He</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- ==================== SIDEBAR ==================== -->
+  <main id="top" class="layout">
+
+    <!-- ========== SIDEBAR (left column, sticky) ========== -->
     <aside class="sidebar">
 
-      <div class="id-card">
-        <div class="avatar" id="avatar">
-          <!-- Replace with your photo: <img src="assets/avatar.jpg" alt="Yixuan He" /> -->
-          <span class="avatar-fallback">YH</span>
+      <div class="card id-card">
+        <div class="avatar-wrap">
+          <img class="avatar" src="assets/avatar.jpg" alt="Yixuan He" />
         </div>
-
         <h1 class="name">Yixuan He</h1>
         <p class="role">Undergraduate Researcher</p>
-        <p class="affiliation">
-          Hubei University · Wuhan, CN<br />
-          Manchester Metropolitan University · Manchester, UK
+        <p class="affil">
+          Hubei University · Manchester Metropolitan University
         </p>
+
+        <div class="profile-row">
+          <a class="chip" href="https://openreview.net/profile?id=%7EYixuan_He8" target="_blank" rel="noopener" title="OpenReview">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+            OpenReview
+          </a>
+          <a class="chip" href="https://orcid.org/0009-0000-6179-2935" target="_blank" rel="noopener" title="ORCID">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z"/></svg>
+            ORCID
+          </a>
+          <a class="chip" href="https://scholar.google.com.hk/citations?user=T15nNF0AAAAJ&hl=zh-CN" target="_blank" rel="noopener" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Scholar
+          </a>
+        </div>
       </div>
 
-      <!-- Academic profile buttons -->
-      <nav class="id-links" aria-label="Academic profiles">
-        <a href="https://openreview.net/profile?id=%7EYixuan_He8" target="_blank" rel="noopener">
-          <span class="id-dot"></span>OpenReview
-        </a>
-        <a href="https://orcid.org/0009-0000-6179-2935" target="_blank" rel="noopener">
-          <span class="id-dot"></span>ORCID
-        </a>
-        <a href="https://scholar.google.com.hk/citations?user=T15nNF0AAAAJ&hl=zh-CN" target="_blank" rel="noopener">
-          <span class="id-dot"></span>Google Scholar
-        </a>
-      </nav>
-
-      <!-- Contact -->
-      <div class="id-contact">
-        <h3 class="micro-heading">Contact</h3>
-        <ul>
-          <li><span class="tag">preferred</span><a href="mailto:202431123002038@stu.hubu.edu.cn">202431123002038@stu.hubu.edu.cn</a></li>
-          <li><span class="tag">qq</span><a href="mailto:3282265311@qq.com">3282265311@qq.com</a></li>
-          <li><span class="tag">mmu</span><a href="mailto:21907751@stu.mmu.ac.uk">21907751@stu.mmu.ac.uk</a></li>
+      <div class="card contact-card">
+        <h3 class="card-title">Contact</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="tag">Preferred</span>
+            <a href="mailto:202431123002038@stu.hubu.edu.cn">202431123002038@stu.hubu.edu.cn</a>
+          </li>
+          <li>
+            <span class="tag">QQ</span>
+            <a href="mailto:3282265311@qq.com">3282265311@qq.com</a>
+          </li>
+          <li>
+            <span class="tag">MMU</span>
+            <a href="mailto:21907751@stu.mmu.ac.uk">21907751@stu.mmu.ac.uk</a>
+          </li>
         </ul>
+      </div>
+
+      <div class="card interests-card">
+        <h3 class="card-title">Interests</h3>
+        <div class="tags">
+          <span class="tag-pill">VLM / VLA</span>
+          <span class="tag-pill">Machine Learning</span>
+          <span class="tag-pill">Deep Learning</span>
+          <span class="tag-pill">Medical AI</span>
+        </div>
       </div>
 
     </aside>
 
-    <!-- ==================== MAIN ==================== -->
-    <main class="main">
+    <!-- ========== MAIN (right column) ========== -->
+    <div class="content">
 
       <!-- About -->
-      <section class="block reveal">
-        <h2 class="block-title">About</h2>
-        <p class="lede">
-          I'm an undergraduate working at the intersection of
-          <em>vision, language, and medicine</em> — building machine intelligence
-          that can see, understand, and assist in domains where it matters most.
+      <section class="section" id="about">
+        <h2 class="section-title">About</h2>
+        <p class="lead">
+          I'm an undergraduate researcher working at the intersection of
+          <strong>vision-language models</strong>, <strong>deep learning</strong>, and
+          <strong>medicine</strong> — building systems that can see, understand, and assist
+          in domains where intelligence matters most.
         </p>
-        <ul class="chips">
-          <li>Vision-Language Models (VLM)</li>
-          <li>Vision-Language-Action (VLA)</li>
-          <li>Machine Learning · Deep Learning</li>
-          <li>Medical–Engineering Crossover</li>
-        </ul>
+      </section>
+
+      <!-- Research -->
+      <section class="section" id="research">
+        <h2 class="section-title">Research</h2>
+
+        <div class="grid-2">
+          <article class="mini-card">
+            <span class="mini-label">01</span>
+            <h4>Vision-Language Models</h4>
+            <p>Exploring how models jointly understand images and language — from grounding to multimodal reasoning.</p>
+          </article>
+          <article class="mini-card">
+            <span class="mini-label">02</span>
+            <h4>Vision-Language-Action</h4>
+            <p>Extending VLMs toward embodied intelligence: perception-to-action pipelines for agents and robotics.</p>
+          </article>
+          <article class="mini-card">
+            <span class="mini-label">03</span>
+            <h4>ML / DL Methods</h4>
+            <p>Core machine learning and deep learning: representation learning, optimization, and generalization.</p>
+          </article>
+          <article class="mini-card">
+            <span class="mini-label">04</span>
+            <h4>Medical AI</h4>
+            <p>Medical–engineering interdisciplinary research, applying learning systems to clinical problems.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-row">
+          <div class="edu-when">2024 — Present</div>
+          <div class="edu-what">
+            <h4>Hubei University <span class="edu-place">Wuhan, China</span></h4>
+            <p>B.Sc. Undergraduate</p>
+          </div>
+        </div>
+
+        <div class="edu-row">
+          <div class="edu-when">2024 — Present</div>
+          <div class="edu-what">
+            <h4>Manchester Metropolitan University <span class="edu-place">Manchester, UK</span></h4>
+            <p>B.Sc. Undergraduate</p>
+          </div>
+        </div>
       </section>
 
       <!-- Publications -->
-      <section class="block reveal">
-        <h2 class="block-title">Publications</h2>
+      <section class="section" id="publications">
+        <h2 class="section-title">Publications</h2>
 
-        <article class="pub">
-          <span class="pub-year">2026</span>
-          <div class="pub-body">
-            <a class="pub-title" href="https://journals.sagepub.com/doi/epub/10.1177/00368504261460667" target="_blank" rel="noopener">
-              Article Title <span class="pub-arrow">↗</span>
-            </a>
-            <p class="pub-venue"><em>SAGE Journals</em></p>
-            <!-- TODO: replace "Article Title" with the real paper title; add co-authors & DOI here -->
-          </div>
+        <article class="pub-card">
+          <a class="pub-link" href="https://journals.sagepub.com/doi/epub/10.1177/00368504261460667" target="_blank" rel="noopener">
+            <span class="pub-year">2026</span>
+            <span class="pub-body">
+              <span class="pub-name">Article Title</span>
+              <span class="pub-venue">SAGE Journals</span>
+            </span>
+            <span class="pub-arrow" aria-hidden="true">›</span>
+          </a>
         </article>
 
         <!--
-        FUTURE PUBLICATION TEMPLATE — duplicate as needed:
-
-        <article class="pub">
-          <span class="pub-year">YYYY</span>
-          <div class="pub-body">
-            <a class="pub-title" href="DOI_OR_URL" target="_blank" rel="noopener">
-              Authors. "Paper Title." <span class="pub-arrow">↗</span>
-            </a>
-            <p class="pub-venue"><em>Venue</em></p>
-          </div>
+        FUTURE TEMPLATE:
+        <article class="pub-card">
+          <a class="pub-link" href="URL" target="_blank" rel="noopener">
+            <span class="pub-year">YYYY</span>
+            <span class="pub-body">
+              <span class="pub-name">Authors. "Paper Title."</span>
+              <span class="pub-venue">Venue</span>
+            </span>
+            <span class="pub-arrow">›</span>
+          </a>
         </article>
         -->
       </section>
 
-      <!-- Research (placeholder for future work) -->
-      <section class="block reveal">
-        <h2 class="block-title">Research</h2>
-        <p class="placeholder">
-          Coming soon — research projects, working papers, and lab notes will live here.
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="lead">
+          Feel free to reach out via email —
+          <a href="mailto:202431123002038@stu.hubu.edu.cn" class="mail-link">202431123002038@stu.hubu.edu.cn</a>
+          is preferred. I'm open to research collaboration and discussion.
         </p>
-        <!--
-        FUTURE PROJECT TEMPLATE:
-
-        <article class="proj">
-          <h4>Project Title</h4>
-          <p class="proj-meta">Lab / Advisor · Year</p>
-          <p>One-paragraph description of problem, approach, and outcome.</p>
-        </article>
-        -->
       </section>
 
-      <footer class="foot">
-        <span>© <span id="year"></span> Yixuan He</span>
-        <span class="foot-sep">·</span>
-        <span>Hosted on GitHub Pages</span>
-      </footer>
+    </div>
+  </main>
 
-    </main>
-  </div>
+  <footer class="footer">
+    <p>© <span id="year"></span> Yixuan He · Hosted on GitHub Pages</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
