@@ -23,4 +23,26 @@
       window.scrollTo({ top: y, behavior: "smooth" });
     });
   });
+  // ---------- Like button (per-visitor, saved in browser) ----------
+  const LIKE_KEY = "yh-profile-liked";
+  const BASE_LIKES = 0; // 起始点赞数，可自行修改
+  const likeBtn = document.getElementById("likeBtn");
+  const likeCountEl = document.getElementById("likeCount");
+  let liked = false;
+  try { liked = localStorage.getItem(LIKE_KEY) === "1"; } catch (e) {}
+
+  function renderLike() {
+    if (!likeBtn || !likeCountEl) return;
+    likeBtn.classList.toggle("liked", liked);
+    likeCountEl.textContent = BASE_LIKES + (liked ? 1 : 0);
+  }
+
+  if (likeBtn && likeCountEl) {
+    renderLike();
+    likeBtn.addEventListener("click", () => {
+      liked = !liked;
+      try { localStorage.setItem(LIKE_KEY, liked ? "1" : "0"); } catch (e) {}
+      renderLike();
+    });
+  }
 })();
